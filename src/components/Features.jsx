@@ -85,8 +85,6 @@ const Features = () => {
                                     You will notice the difference the moment you pick one up.
                                 </p>
                             </div>
-                            
-
                         </div>
                     </div>
                 </div>
