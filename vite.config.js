@@ -7,6 +7,12 @@ export default defineConfig({
   plugins: [react(), sentryVitePlugin({
     org: "jsm-gw",
     project: "javascript-react"
+  }), sentryVitePlugin({
+    org: "jsm-gw",
+    project: "javascript-react"
+  }), sentryVitePlugin({
+    org: "jsm-gw",
+    project: "apple-website"
   })],
 
   build: {
