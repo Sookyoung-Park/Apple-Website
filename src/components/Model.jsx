@@ -7,6 +7,8 @@ import * as THREE from 'three'
 import { View } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { models, sizes } from '../constants'
+import { useEffect } from 'react'
+import { animateWithGsapTimeline } from '../utils/animation'
 
 
 const Model = () => {
@@ -29,6 +31,25 @@ const Model = () => {
     const[smallRotation,setSmallRotation]=useState(0);
     const[largeRotation,setLargeRotation]=useState(0);
 
+    // for timeline animation switching small <-> large device
+    const tl = gsap.timeline();
+
+    useEffect(()=>{
+        if(size === 'large'){
+            animateWithGsapTimeline(tl, small, smallRotation, '#view1', '#view2',{
+                transform: 'translateX(-100%)',
+                duration:2,
+            });
+        }
+        if(size === 'small'){
+            animateWithGsapTimeline(tl, large, largeRotation, '#view2', '#view1',{
+                transform: 'translateX(0)',
+                duration:2,
+            });
+
+        }
+    },[size]);
+
     useGSAP(()=>{
         gsap.to('.section-heading', {opacity:1, y:0})
         },
@@ -48,6 +69,7 @@ const Model = () => {
                         setRotationState={setSmallRotation}
                         item={model}
                         size={size}
+                        gsapType="view1"
                         />
                         <ModelView
                         index={2}
@@ -56,6 +78,7 @@ const Model = () => {
                         setRotationState={setLargeRotation}
                         item={model}
                         size={size}
+                        gsapType="view2"
                         />
 
                         <Canvas
