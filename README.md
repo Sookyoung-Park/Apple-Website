@@ -57,4 +57,4 @@ npm run dev
 
 **Screenshots**
 ![Screenshot1](https://github.com/Sookyoung-Park/Apple-Website/blob/main/assets/readme_page2.gif?raw=true)
-![Screenshot2](https://github.com/Sookyoung-Park/Apple-Website/blob/main/assets/readme_page2.gif?raw=true)
+![Screenshot2](https://github.com/Sookyoung-Park/Apple-Website/blob/main/assets/readme_page3.gif?raw=true)
