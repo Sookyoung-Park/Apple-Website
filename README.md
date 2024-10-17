@@ -30,3 +30,29 @@ This is a clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS 
 - Delicate & Subtle 3D animations using GSAP
 - A unique and interactive video carousel using GSAP for user experience.
 - Responsive design on any device and screen size.
+
+
+## **Usage**
+- **Cloning the Repository**
+
+```bash
+git clone https://github.com/Sookyoung-Park/Apple-Website.git
+cd Apple-Website
+```
+
+**Installation**
+
+Install the project dependencies using npm:
+
+```bash
+npm install
+```
+
+**Running the Project**
+
+```bash
+npm run dev
+```
+
+
+**Screenshots**
