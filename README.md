@@ -15,7 +15,18 @@
 
 This is a clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS with Three.js and GSAP.
 
+## **Tech Stack**
+
+- React.js
+- Three.js
+- React Three Fiber
+- React Three Drei
+- GSAP (Greensock)
+- Vite
+- Tailwind CSS
+
 
 ## **Main Features**
-
->
+- Delicate & Subtle 3D animations using GSAP
+- A unique and interactive video carousel using GSAP for user experience.
+- Responsive design on any device and screen size.
